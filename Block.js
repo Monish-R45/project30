@@ -14,8 +14,8 @@ class Block{
       var pos= this.body.position;
       this.visibility=255
       if(this.body.speed<3){
-      rectMode(CENTER);
-      rect(pos.x,pos.y,this.width, this.height);
+      imageMode(CENTER);
+      image(image,pos.x,pos.y,this.width, this.height);
       }else{
         World.remove(world, this.body)
         push();
