@@ -8,6 +8,7 @@ class Block{
       this.width = width;
       this.height = height;
       this.image = loadImage("block.png")
+      this.visibility=255
       World.add(world, this.body);
     }
     display(){
@@ -15,7 +16,7 @@ class Block{
       this.visibility=255
       if(this.body.speed<3){
       imageMode(CENTER);
-      image(image,pos.x,pos.y,this.width, this.height);
+      image(this.image,pos.x,pos.y,this.width, this.height);
       }else{
         World.remove(world, this.body)
         push();
