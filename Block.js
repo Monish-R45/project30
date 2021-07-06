@@ -13,7 +13,6 @@ class Block{
     }
     display(){
       var pos= this.body.position;
-      this.visibility=255
       if(this.body.speed<3){
       imageMode(CENTER);
       image(this.image,pos.x,pos.y,this.width, this.height);
